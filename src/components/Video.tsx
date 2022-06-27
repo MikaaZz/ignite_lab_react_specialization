@@ -41,7 +41,7 @@ export function Video(props: VideoProps) {
     const { data } = useQuery(GET_LESSON_BY_SLUG_QUERY, {
         variables: {
             slug: props.lessonSlug,
-        }
+        }  
     })
 if (!data) {
     return (
